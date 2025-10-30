@@ -147,10 +147,10 @@
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        <a href="https://github.com/Jeiwan/uniswapv3-book" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/0xAllan123/uniswapv3-book" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/Jeiwan/uniswapv3-book/edit/main/src/milestone_2/tick-bitmap-index.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/0xAllan123/uniswapv3-book/edit/main/src/milestone_2/tick-bitmap-index.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -252,7 +252,7 @@ print(format(word ^ mask, '#0258b'))                                      ↓ he
 </code></pre>
 <h3 id="finding-next-tick"><a class="header" href="#finding-next-tick">Finding Next Tick</a></h3>
 <p>The next step is finding ticks with liquidity using the bitmap index.</p>
-<p>During swapping, we need to find a tick with liquidity that’s before or after the current tick (that is: to the left or the right of it). In the previous milestone, we used to <a href="https://github.com/Jeiwan/uniswapv3-code/blob/85b8605c37a9065c141a234ee2c18d9507eeba22/src/UniswapV3Pool.sol#L142">calculate and hard code it</a>, but now we need to find such tick using the bitmap index. We’ll do this in the <code>TickBitmap.nextInitializedTickWithinOneWord</code> function. In this function, we’ll need to implement two scenarios:</p>
+<p>During swapping, we need to find a tick with liquidity that’s before or after the current tick (that is: to the left or the right of it). In the previous milestone, we used to <a href="https://github.com/0xAllan123/uniswapv3-code/blob/85b8605c37a9065c141a234ee2c18d9507eeba22/src/UniswapV3Pool.sol#L142">calculate and hard code it</a>, but now we need to find such tick using the bitmap index. We’ll do this in the <code>TickBitmap.nextInitializedTickWithinOneWord</code> function. In this function, we’ll need to implement two scenarios:</p>
 <ol>
 <li>When selling token <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> (ETH in our case), find the next initialized tick in the current tick’s word and <strong>to the right</strong> of the current tick.</li>
 <li>When selling token <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> (USDC in our case), find the next initialized tick in the next (current + 1) tick’s word and <strong>to the left</strong> of the current tick.</li>
