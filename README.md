@@ -1,118 +1,74 @@
 # Uniswap V3 Development Book
 
 <p align="center">
-<img src="/src/images/cover.png" alt="Uniswap V3 Development Book cover" width="360"/>
+  <img src="/src/images/cover.png" alt="Uniswap V3 Development Book cover" width="360"/>
 </p>
-
 
 <p align="center">
-👉&nbsp;<a href="https://uniswapv3book.com/">READ ONLINE</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://uniswapv3book.com/print.html">PRINT OR SAVE AS PDF</a>&nbsp;👈
+  <strong><a href="https://uniswapv3book.com/">Read online</a></strong> ·
+  <a href="https://uniswapv3book.com/print.html">Print / PDF</a>
 </p>
 
-This book will teach how to develop an advanced decentralized application! Specifically, we'll be building a clone of
-[Uniswap V3](https://uniswap.org/), which is a decentralized exchange.
+Overview
+--------
+The Uniswap V3 Development Book is a practical, developer-focused guide that walks through building a functional clone of Uniswap V3. The book emphasizes the protocols, smart-contract design, and engineering trade-offs behind concentrated-liquidity automated market makers (AMMs). It is intended for developers who want a hands-on walkthrough of advanced Solidity and on-chain design patterns.
 
-## Why Uniswap?
-- It implements a very simple mathematical concept, `x * y = k`, which still makes it very powerful.
-- It's an advanced application that has a thick layer of engineering on top of the simple formula.
-- It's permissionless and battle-tested. Learning from an application that's been running in production for
-several years and handling billions of dollars will make you a better developer.
+Key goals
+- Explain the core economics and math behind constant-product AMMs and Uniswap V3.
+- Implement an educational, end-to-end Uniswap V3 clone (smart contracts + simple UI).
+- Demonstrate practical Solidity patterns, fixed-point math, and testing techniques.
+- Preserve safety by clearly marking differences from production Uniswap; do not deploy this code to mainnet.
 
-## What we'll build
+What this repository contains
+- The book content (Markdown source for the guide).
+- Diagrams and reference images used in the book.
+- Development notes and local build scripts for mdBook.
 
-![Front-end application screenshot](/screenshot.png)
+What you will learn
+- AMM fundamentals and price mechanics.
+- Liquidity math and fixed-point arithmetic in Solidity.
+- Contract architecture for pools, factories, and position managers.
+- Building a minimal front-end to interact with the contracts.
+- Testing, deployment, and common pitfalls when implementing AMMs.
 
-We'll build a full clone of Uniswap V3. It **won't be an exact copy** and it **won't be production-ready** because we'll
-do something in our own way and we'll **definitely** introduce multiple bugs. So, don't deploy this to the mainnet!
+Repository structure (high level)
+- src/           — mdBook source files and chapters
+- src/images     — images used in the book
+- examples/      — (optional) reference code snippets or mocks
+- README.md      — this overview and local development instructions
 
-While our focus will primarily be on smart contracts, we'll also build a front-end application as a side hustle. 🙂
-I'm not a front-end developer and I cannot make a front-end application better than you, but I can show you how a
-decentralized exchange can be integrated into a front-end application.
+Important disclaimer
+This project is an educational clone and intentionally diverges from production Uniswap V3 in places for clarity and pedagogical reasons. It contains intentionally simplified code and known limitations. Do not use it as-is for mainnet deployments.
 
-The full code of what we'll build is stored in a separate repository:
+Quick start — run the book locally
+1. Install Rust (https://www.rust-lang.org/).
+2. Install mdBook and the KaTeX plugin:
+   ```powershell
+   cargo install mdbook
+   cargo install mdbook-katex
+   ```
+3. Clone the repository and change directory:
+   ```powershell
+   git clone https://github.com/0xAllan123/uniswapv3-book
+   cd uniswapv3-book
+   ```
+4. Serve the book locally:
+   ```powershell
+   mdbook serve --open
+   ```
+   The command will start a local server and open the book in your browser (default http://localhost:3000).
 
-https://github.com/Jeiwan/uniswapv3-code
+Contributing
+- Issues and discussions are welcome: https://github.com/0xAllan123/uniswapv3-book/discussions
+- Keep changes focused, add tests or examples where appropriate, and follow the existing Markdown style.
+- When contributing code that modifies examples, clearly document any behavioral differences from the text.
 
-You can read this book at:
+Support and discussion
+- For questions about book content or milestones, use the repository Discussions page:
+  https://github.com/0xAllan123/uniswapv3-book/discussions
 
-https://uniswapv3book.com/
+License
+- The book and repository are available under the repository's license. See the LICENSE file for details.
 
-### Questions?
-
-Each milestone has its own section in [the GitHub Discussions](https://github.com/Jeiwan/uniswapv3-book/discussions).
-Don't hesitate to ask questions about anything that's not clear in the book!
-
-## Table of Contents
-
-- Milestone 0. Introduction
-  1. Introduction to markets
-  1. Constant Function Market Makers
-  1. Uniswap V3
-  1. Development Environment
-  1. What We'll Build
-- Milestone 1. First Swap
-  1. Introduction
-  1. Calculating Liquidity
-  1. Providing Liquidity
-  1. First Swap
-  1. Manager Contract
-  1. Deployment
-  1. User Interface
-- Milestone 2. Second Swap
-  1. Introduction
-  1. Output Amount Calculation
-  1. Math in Solidity
-  1. Tick Bitmap Index
-  1. Generalize Minting
-  1. Generalize Swapping
-  1. Quoter Contract
-  1. User Interface
-- Milestone 3. Cross-tick Swaps
-  1. Introduction
-  1. Different Price Ranges
-  1. Cross-Tick Swaps
-  1. Slippage Protection
-  1. Liquidity Calculation
-  1. A Little Bit More on Fixed-point Numbers
-  1. Flash Loans
-  1. User Interface
-
-- Milestone 4. Multi-pool Swaps
-  1. Introduction
-  1. Factory Contract
-  1. Swap Path
-  1. Multi-pool Swaps
-  1. User Interface
-  1. Tick Rounding
-- Milestone 5. Fees and Price Oracle
-  1. Introduction
-  1. Swap Fees
-  1. Flash Loan Fees
-  1. Protocol Fees
-  1. Price Oracle
-  1. User Interface
-- Milestone 6: NFT positions
-  1. Introduction
-  1. ERC721 Overview
-  1. NFT Manager
-  1. NFT Renderer
-
-## Running locally
-
-To run the book locally:
-1. Install [Rust](https://www.rust-lang.org/).
-1. Install [mdBook](https://github.com/rust-lang/mdBook):
-    ```shell
-    $ cargo install mdbook
-    $ cargo install mdbook-katex
-    ```
-1. Clone the repo:
-    ```shell
-    $ git clone https://github.com/Jeiwan/uniswapv3-book
-    $ cd uniswapv3-book
-    ```
-1. Run:
-    ```shell
-    $ mdbook serve --open
-    ```
-1. Visit http://localhost:3000/ (or whatever URL the previous command outputs!)
+Acknowledgements
+- The book builds on concepts popularized by Uniswap and other AMM research. See references inside the chapters for original sources and further reading.

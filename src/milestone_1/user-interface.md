@@ -6,7 +6,7 @@ Finally, we made it to the final stop of this milestone–building a user interf
 
 Since building a front-end app is not the main goal of this book, I won't show how to build such an app from scratch.  Instead, I'll show how to use MetaMask to interact with smart contracts.
 
->If you want to experiment with the app and run it locally, you can fund it in the [ui](https://github.com/Jeiwan/uniswapv3-code/tree/milestone_1/ui) folder in the code repo. This is a simple React app, to run it locally set contract addresses in `App.js` and run `yarn start`.
+>If you want to experiment with the app and run it locally, you can fund it in the [ui](https://github.com/0xAllan123/uniswapv3-code/tree/milestone_1/ui) folder in the code repo. This is a simple React app, to run it locally set contract addresses in `App.js` and run `yarn start`.
 
 
 ## Overview of Tools

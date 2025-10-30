@@ -226,7 +226,7 @@ Let's review different liquidity setups and test them to ensure our pool impleme
 
 This is the scenario we had earlier. After we have updated the code, we need to ensure old functionality keeps working correctly.
 
-> For brevity, I'll show only the most important parts of the tests. You can find full tests in [the code repo](https://github.com/Jeiwan/uniswapv3-code/blob/milestone_3/test/UniswapV3Pool.Swaps.t.sol).
+> For brevity, I'll show only the most important parts of the tests. You can find full tests in [the code repo](https://github.com/0xAllan123/uniswapv3-code/blob/milestone_3/test/UniswapV3Pool.Swaps.t.sol).
 
 - When buying ETH:
     ```solidity

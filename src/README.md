@@ -25,14 +25,14 @@ Alright, let's get started!
 ## Useful Links
 
 1. This book is available at: <https://uniswapv3book.com/>
-1. This book is hosted on GitHub: <https://github.com/Jeiwan/uniswapv3-book>
-1. All source codes are hosted in a separate repo: <https://github.com/Jeiwan/uniswapv3-code>
+1. This book is hosted on GitHub: <https://github.com/0xAllan123/uniswapv3-book>
+1. All source codes are hosted in a separate repo: <https://github.com/0xAllan123/uniswapv3-code>
 1. If you think you can help Uniswap, they have [a grants program](https://www.notion.so/unigrants/Welcome-to-UNI-Grants-6e3e84967a984a5fb127ae749649ddc9).
-1. If you're interested in DeFi and blockchains, [follow me on Twitter](https://twitter.com/jeiwan7).
+1. If you're interested in DeFi and blockchains, [follow me on Twitter](https://twitter.com/0xAllan1237).
 
 ## Questions?
 
-Each milestone has its section in [the GitHub Discussions](https://github.com/Jeiwan/uniswapv3-book/discussions).  Don't hesitate to ask questions about anything that's not clear in the book!
+Each milestone has its section in [the GitHub Discussions](https://github.com/0xAllan123/uniswapv3-book/discussions).  Don't hesitate to ask questions about anything that's not clear in the book!
 
 ---
 
@@ -40,14 +40,14 @@ Each milestone has its section in [the GitHub Discussions](https://github.com/Je
 
 This book will be easy for those who know something about constant-function market makers and Uniswap. If you're a complete beginner in decentralized exchanges, here's how I'd recommend starting:
 1. Read my Uniswap V1 series. It covers the very basics of Uniswap, and the code is much simpler. If you have some experience with Solidity, skip the code since it's very basic and Uniswap V2 does it better.
-    1. [Programming DeFi: Uniswap. Part 1](https://jeiwan.net/posts/programming-defi-uniswap-1/)
-    1. [Programming DeFi: Uniswap. Part 2](https://jeiwan.net/posts/programming-defi-uniswap-2/)
-    1. [Programming DeFi: Uniswap. Part 3](https://jeiwan.net/posts/programming-defi-uniswap-3/)
+    1. [Programming DeFi: Uniswap. Part 1](https://0xAllan123.net/posts/programming-defi-uniswap-1/)
+    1. [Programming DeFi: Uniswap. Part 2](https://0xAllan123.net/posts/programming-defi-uniswap-2/)
+    1. [Programming DeFi: Uniswap. Part 3](https://0xAllan123.net/posts/programming-defi-uniswap-3/)
 1. Read my Uniswap V2 series. I don't go too deep into the math and underlying concepts here since they're covered in the V1 series, but the code of V2 is worth getting familiar with–it'll hopefully teach you a different way of thinking about smart contracts programming (it's not how we usually write programs).
-    1. [Programming DeFi: Uniswap V2. Part 1](https://jeiwan.net/posts/programming-defi-uniswapv2-1/)
-    1. [Programming DeFi: Uniswap V2. Part 2](https://jeiwan.net/posts/programming-defi-uniswapv2-2/)
-    1. [Programming DeFi: Uniswap V2. Part 3](https://jeiwan.net/posts/programming-defi-uniswapv2-3/)
-    1. [Programming DeFi: Uniswap V2. Part 4](https://jeiwan.net/posts/programming-defi-uniswapv2-4/)
+    1. [Programming DeFi: Uniswap V2. Part 1](https://0xAllan123.net/posts/programming-defi-uniswapv2-1/)
+    1. [Programming DeFi: Uniswap V2. Part 2](https://0xAllan123.net/posts/programming-defi-uniswapv2-2/)
+    1. [Programming DeFi: Uniswap V2. Part 3](https://0xAllan123.net/posts/programming-defi-uniswapv2-3/)
+    1. [Programming DeFi: Uniswap V2. Part 4](https://0xAllan123.net/posts/programming-defi-uniswapv2-4/)
 
 If math is an issue, consider going through [Algebra 1](https://www.khanacademy.org/math/algebra) and [Algebra 2](https://www.khanacademy.org/math/algebra2) courses on Khan Academy. The math of Uniswap is not hard, but it requires the skill of basic algebraic manipulations.
 

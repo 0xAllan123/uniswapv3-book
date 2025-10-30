@@ -1,5 +1,5 @@
 [book]
-authors = ["Jeiwan"]
+authors = ["0xAllan123"]
 language = "en"
 multilingual = false
 src = "src"
@@ -8,9 +8,9 @@ description = "A book that teaches how to build a clone of Uniswap V3 in Solidit
 
 [output.html]
 curly-quotes = true
-git-repository-url = "https://github.com/Jeiwan/uniswapv3-book"
+git-repository-url = "https://github.com/0xAllan123/uniswapv3-book"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/Jeiwan/uniswapv3-book/edit/main/{path}"
+edit-url-template = "https://github.com/0xAllan123/uniswapv3-book/edit/main/{path}"
 cname = "uniswapv3book.com"
 
 [preprocessor.katex]

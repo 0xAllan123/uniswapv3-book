@@ -521,4 +521,4 @@ Of course, testing only successful scenarios is not enough. We also need to test
 1. Zero liquidity is provided.
 1. The liquidity provider doesn't have enough tokens.
 
-I'll leave it to you to implement these scenarios! Feel free to peek at [the code in the repo](https://github.com/Jeiwan/uniswapv3-code/blob/milestone_1/test/UniswapV3Pool.t.sol).
+I'll leave it to you to implement these scenarios! Feel free to peek at [the code in the repo](https://github.com/0xAllan123/uniswapv3-code/blob/milestone_1/test/UniswapV3Pool.t.sol).

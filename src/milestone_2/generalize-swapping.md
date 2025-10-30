@@ -309,4 +309,4 @@ That's it! Swapping is done!
 
 The tests won't change significantly, we only need to pass the `amountSpecified` and `zeroForOne` to the `swap` function. Output amount will change insignificantly though, because it's now calculated in Solidity.
 
-We can now test swapping in the opposite direction! I'll leave this for you, as homework (just be sure to choose a small input amount so the whole swap can be handled by our single price range). Don't hesitate to peek at [my tests](https://github.com/Jeiwan/uniswapv3-code/blob/milestone_2/test/UniswapV3Pool.t.sol) if this feels difficult!
+We can now test swapping in the opposite direction! I'll leave this for you, as homework (just be sure to choose a small input amount so the whole swap can be handled by our single price range). Don't hesitate to peek at [my tests](https://github.com/0xAllan123/uniswapv3-code/blob/milestone_2/test/UniswapV3Pool.t.sol) if this feels difficult!

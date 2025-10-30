@@ -124,7 +124,7 @@ function uniswapV3MintCallback(
 }
 ```
 
-Try updating the rest of the code yourself, and if it gets too difficult, feel free to peek [at this commit](https://github.com/Jeiwan/uniswapv3-code/commit/cda23134fd12a190aaeebe718786545621e16c0e).
+Try updating the rest of the code yourself, and if it gets too difficult, feel free to peek [at this commit](https://github.com/0xAllan123/uniswapv3-code/commit/cda23134fd12a190aaeebe718786545621e16c0e).
 
 ## Implementing Manager Contract
 
