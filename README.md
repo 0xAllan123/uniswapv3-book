@@ -1,10 +1,6 @@
 # Uniswap V3 Development Book
 
 <p align="center">
-  <img src="/src/images/cover.png" alt="Uniswap V3 Development Book cover" width="360"/>
-</p>
-
-<p align="center">
   <strong><a href="https://uniswapv3book.com/">Read online</a></strong> ·
   <a href="https://uniswapv3book.com/print.html">Print / PDF</a>
 </p>
